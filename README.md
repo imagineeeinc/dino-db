@@ -20,6 +20,10 @@ const dinoBb = require('dino');
 // browser
 import * as dinoDb from 'https://unpkg.com/dino-db@latest/src/main.es.min.js'
 ```
+
+Check out on how to expose your database to external apps with the [server extension](https://www.npmjs.com/package/dino-db-server).
+
+Then check out on how to connect to the database with the [JavaScript based client](https://www.npmjs.com/package/dino-db-client)
 # Usage
 ```js
 //initialise databse in the app

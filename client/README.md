@@ -20,6 +20,10 @@ const dinoClient = require('dino-db-client');
 import * as dinoClient from 'https://unpkg.com/dino-db-client@latest/src/main.es.min.js'
 ```
 
+First check out how to start a database using the cross platform database module [dino-db](https://www.npmjs.com/package/dino-db)
+
+Then check out on how to expose your database with the [server extension](https://www.npmjs.com/package/dino-db-server) so you can connect using this client.
+
 # Usage
 ```js
 //initialise client on local server with default port (accsesKey is optional and is only required if your server is configered that way)

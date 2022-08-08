@@ -15,7 +15,9 @@ npm install dino-db-server
 // node only
 const dinoServer = require('dino-db-server');
 ```
+First check out how to start a database using the cross platform database module [dino-db](https://www.npmjs.com/package/dino-db)
 
+Then check out on how to connect to the database with the [JavaScript based client](https://www.npmjs.com/package/dino-db-client)
 # Usage
 ```js
 //initialise databse in the app
