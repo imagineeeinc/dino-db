@@ -17,8 +17,10 @@ npm i dino-db
 // node
 const dinoBb = require('dino');
 
-// browser
+// browser (skypack)
 import * as dinoDb from 'https://cdn.skypack.dev/dino-db'
+// browser module bundler
+import * as dinoDb from 'dino-db'
 ```
 
 Check out on how to expose your database to external apps with the [server extension](https://www.npmjs.com/package/dino-db-server).

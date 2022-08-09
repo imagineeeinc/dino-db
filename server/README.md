@@ -14,6 +14,8 @@ npm install dino-db-server
 ```js
 // node only
 const dinoServer = require('dino-db-server');
+// node (es6)
+import * as dinoServer from 'dino-db-server'
 ```
 First check out how to start a database using the cross platform database module [dino-db](https://www.npmjs.com/package/dino-db)
 
