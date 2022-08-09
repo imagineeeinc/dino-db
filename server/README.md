@@ -22,8 +22,8 @@ Then check out on how to connect to the database with the [JavaScript based clie
 ```js
 //initialise databse in the app
 var db = new db.databse({id: "food"})
-//connect the db to the server (accessKey is an optional passoword)
-var server = new dbServer(db, {accsesKey: 'password123', host: 'localhost', port: 88})
+//connect the db to the server on localhost:88/ (accessKey is an optional passoword)
+var server = new dbServer(db, {accsesKey: 'password123', host: 'localhost', port: 88, path: '/'})
 // the host and the port are the default values in this example.
 ```
 

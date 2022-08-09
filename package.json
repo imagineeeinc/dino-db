@@ -1,6 +1,6 @@
 {
   "name": "dino-db",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "🦕A small, document-oriented data base🦕",
   "main": "src/main.js",
   "repository": {
@@ -11,7 +11,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/imagineeeinc/dino-db/issues"
-  },"keywords": [
+  },
+  "keywords": [
     "database",
     "db",
     "dino-db",
@@ -20,5 +21,8 @@
     "dinosaur",
     "document-database"
   ],
-  "homepage": "https://github.com/imagineeeinc/dino-db#readme"
+  "homepage": "https://github.com/imagineeeinc/dino-db#readme",
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  }
 }

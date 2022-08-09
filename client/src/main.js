@@ -3,6 +3,7 @@ const axios = require('axios').default
 exports.remoteClient = class remoteClient {
 	constructor(options) {
 		this.url = options.url || '///:88'
+		this.path = options.path || '/'
 		this.accsesKey = options.accsesKey || undefined
 		/*
 		this.cacheForOffline = options.cacheForOffline || false
@@ -11,7 +12,7 @@ exports.remoteClient = class remoteClient {
 	}
 	async getFullBook(name) {
 		try {
-			let res = await axios.get(`${this.url}/dinodb/api/v1/getfullbook`, {
+			let res = await axios.get(`${this.url+this.path}dinodb/api/v1/getfullbook`, {
 				params: {
 					name: name,
 					key: this.accsesKey
@@ -29,7 +30,7 @@ exports.remoteClient = class remoteClient {
 	}
 	async newBook(name) {
 		try {
-			let res = await axios.get(`${this.url}/dinodb/api/v1/newbook`, {
+			let res = await axios.get(`${this.url+this.path}dinodb/api/v1/newbook`, {
 				params: {
 					name: name,
 					key: this.accsesKey
@@ -47,7 +48,7 @@ exports.remoteClient = class remoteClient {
 	}
 	async setInBook(name, id, data) {
 		try {
-			let res = await axios.get(`${this.url}/dinodb/api/v1/setinbook`, {
+			let res = await axios.get(`${this.url+this.path}dinodb/api/v1/setinbook`, {
 				params: {
 					name: name,
 					id: id,
@@ -67,7 +68,7 @@ exports.remoteClient = class remoteClient {
 	}
 	async updateInBook(name, id, data) {
 		try {
-			let res = await axios.get(`${this.url}/dinodb/api/v1/updateinbook`, {
+			let res = await axios.get(`${this.url+this.path}dinodb/api/v1/updateinbook`, {
 				params: {
 					name: name,
 					id: id,
@@ -87,7 +88,7 @@ exports.remoteClient = class remoteClient {
 	}
 	async getFromBook(name, id) {
 		try {
-			let res = await axios.get(`${this.url}/dinodb/api/v1/getfrombook`, {
+			let res = await axios.get(`${this.url+this.path}dinodb/api/v1/getfrombook`, {
 				params: {
 					name: name,
 					id: id,
@@ -106,7 +107,7 @@ exports.remoteClient = class remoteClient {
 	}
 	async findInBook(name, options) {
 		try {
-			let res = await axios.get(`${this.url}/dinodb/api/v1/findinbook`, {
+			let res = await axios.get(`${this.url+this.path}dinodb/api/v1/findinbook`, {
 				params: {
 					name: name,
 					query: JSON.stringify(options),
@@ -125,7 +126,7 @@ exports.remoteClient = class remoteClient {
 	}
 	async deleteInBook(name, id) {
 		try {
-			let res = await axios.get(`${this.url}/dinodb/api/v1/deleteinbook`, {
+			let res = await axios.get(`${this.url+this.path}dinodb/api/v1/deleteinbook`, {
 				params: {
 					name: name,
 					id: id,
@@ -144,7 +145,7 @@ exports.remoteClient = class remoteClient {
 	}
 	async deleteBook(name) {
 		try {
-			let res = await axios.get(`${this.url}/dinodb/api/v1/getfullbook`, {
+			let res = await axios.get(`${this.url+this.path}dinodb/api/v1/getfullbook`, {
 				params: {
 					name: name,
 					key: this.accsesKey
@@ -162,7 +163,7 @@ exports.remoteClient = class remoteClient {
 	}
 	async ping(data) {
 		try {
-			let res = await axios.get(`${this.url}/dinodb/api/v1/ping`, {
+			let res = await axios.get(`${this.url+this.path}dinodb/api/v1/ping`, {
 				params: {
 					data: data,
 					key: this.accsesKey
@@ -176,7 +177,7 @@ exports.remoteClient = class remoteClient {
 	}
 	async listBooks() {
 		try {
-			let res = await axios.get(`${this.url}/dinodb/api/v1/listbooks`, {
+			let res = await axios.get(`${this.url+this.path}dinodb/api/v1/listbooks`, {
 				params: {
 					key: this.accsesKey
 				}

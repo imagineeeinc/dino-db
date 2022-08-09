@@ -26,8 +26,8 @@ Then check out on how to expose your database with the [server extension](https:
 
 # Usage
 ```js
-//initialise client on local server with default port (accsesKey is optional and is only required if your server is configered that way)
-var client = new dinoClient.remoteClient({url: 'http://localhost:88', accsesKey: 'password123' })
+//initialise client on local server with default port and path (accsesKey is optional and is only required if your server is configered that way)
+var client = new dinoClient.remoteClient({url: 'http://localhost:88', path: '/', accsesKey: 'password123' })
 // Use the normal api avalible
 // Example (top level await required for this to run in normal context)
 await cl.getInBook('ingredients', 'sugar')

@@ -1,6 +1,6 @@
 var client = require("../client")
 
-var cl = new client.remoteClient({url: 'http://localhost:88' });
+var cl = new client.remoteClient({url: 'http://localhost:88', path: '/' });
 (async () => {
 	console.log(await cl.getFullBook('ingredients'))
 	await cl.setInBook("ingredients", "brownSugar", {dishes: "sweet dish", price: 15.50})

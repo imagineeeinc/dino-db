@@ -1,3 +1,5 @@
+var AES = require("crypto-js/aes")
+var enc = require("crypto-js/enc-utf8")
 exports.database = class Database {
 	constructor(options) {
 		this.id = options.id || "DinoDB"+Math.floor(Math.random() * 9999) + 1000
@@ -122,5 +124,33 @@ exports.database = class Database {
 	}
 	listBooks() {
 		return Object.keys(this._db)
+	}
+	export() {
+		let key = this._makeid(16)
+		let encrypted = AES.encrypt(JSON.stringify(this._db), key).toString()
+		let data = encrypted + key
+		return data
+	}
+	import(data) {
+		let key = data.substr(data.length-16, data.length)
+		let input = data.substr(0, data.length-17)
+		let bytes = AES.decrypt(input, key)
+		let output = bytes.toString(enc)
+		try {
+			let data = JSON.parse(output)
+			this._db = data
+			return [true]
+		} catch (err) {
+			return [false, err]
+		}
+	}
+	_makeid(length) {
+    var result = '';
+    var characters = 'ABCDEF0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength))
+		}
+		return result;
 	}
 }

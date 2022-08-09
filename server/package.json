@@ -1,6 +1,6 @@
 {
   "name": "dino-db-server",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a dino db extension that adds server support to a DB for access from external applications",
   "main": "src/server.js",
   "repository": {
