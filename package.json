@@ -1,17 +1,8 @@
 {
   "name": "dino-db",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "🦕A small, document-oriented data base🦕",
   "main": "src/main.js",
-  "exports": {
-    "default": "./src/main.js",
-    "import": "./src/main.es.min.js",
-    "node": "./src/main.js",
-    "require": "./src/main.js"
-  },
-  "scripts": {
-    "build": "esbuild ./ --bundle --minify --target=chrome58,firefox57,safari11,edge16 --outfile=./src/main.es.min.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/imagineeeinc/dino-db.git"

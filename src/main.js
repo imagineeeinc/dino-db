@@ -120,4 +120,7 @@ exports.database = class Database {
 			return [false, err]
 		}
 	}
+	listBooks() {
+		return Object.keys(this._db)
+	}
 }

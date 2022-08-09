@@ -17,7 +17,7 @@ npm install dino-db-client
 const dinoClient = require('dino-db-client');
 
 //browser
-import * as dinoClient from 'https://unpkg.com/dino-db-client@latest/src/main.es.min.js'
+import * as dinoClient from 'https://cdn.skypack.dev/dino-db-client'
 ```
 
 First check out how to start a database using the cross platform database module [dino-db](https://www.npmjs.com/package/dino-db)

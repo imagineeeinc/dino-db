@@ -93,6 +93,9 @@ exports.dbServer = class dbServer {
 		app.get('/dinodb/api/v1/ping', (req,res) => {
 			res.json({succses: true, ping: true, time: Date.now(), data: req.query.data || 'pong'})
 		})
+		app.get('/dinodb/api/v1/listbooks', (req,res) => {
+			res.json({succses: true, data: db.listBooks()})
+		})
 	}
 	start() {
 		let app = this.app

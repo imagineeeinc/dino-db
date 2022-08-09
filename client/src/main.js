@@ -174,4 +174,17 @@ exports.remoteClient = class remoteClient {
 			console.error(err);
 		}
 	}
+	async listBooks() {
+		try {
+			let res = await axios.get(`${this.url}/dinodb/api/v1/listbooks`, {
+				params: {
+					key: this.accsesKey
+				}
+			})
+			let data = res.data
+			return data.data
+		} catch(err) {
+			console.error(err);
+		}
+	}
 }
