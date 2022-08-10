@@ -40,15 +40,7 @@ read more about [data hierarchy](#data-hierarchy) to see how to structure data
 The documentation is not ready yet.
 # Data Hierarchy
 
-```
-Database: A storage location
-|
-\_Books: A collection of same structered data
- |
- \_Pages: Structered data in key-value pairs, like JSON
-  |
-	\_Sentences: Individual key-value pairs
-```
+<img src="dino-db-data-hierarchy.png">
 
 Example
 ```
