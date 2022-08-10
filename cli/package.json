@@ -1,0 +1,31 @@
+{
+  "name": "dino-db-cli",
+  "version": "0.1.0",
+  "description": "a cli wrapper for dino db",
+  "bin": {
+    "dino-db": "./src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imagineeeinc/dino-db.git"
+  },
+  "author": "imagineeeinc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imagineeeinc/dino-db/issues"
+  },
+  "keywords": [
+    "database",
+    "db",
+    "dino-db",
+    "dino-database",
+    "dino",
+    "dinosaur",
+    "document-database"
+  ],
+  "homepage": "https://github.com/imagineeeinc/dino-db#readme",
+  "dependencies": {
+    "dino-db": "^0.1.3",
+    "dino-db-server": "^0.1.2"
+  }
+}

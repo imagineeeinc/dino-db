@@ -37,7 +37,7 @@ db.getInBook('ingredients', 'sugar')
 read more about [data hierarchy](#data-hierarchy) to see how to structure data
 
 # Docs
-The documentation is not ready yet.
+[Read the docs here](https://imagineee.gitbook.io/dino-db/) (not finished)
 # Data Hierarchy
 
 <img src="dino-db-data-hierarchy.png">
