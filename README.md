@@ -8,6 +8,13 @@ Dino DB is a light yet robust Database for portable and server applications. A d
 
 There are separate modules you can add to enhance your usage of DinoDB. There is a server extension which allows you to access the Database from external applications with http requests, there is also a cross platform client which adds a clean api to make requests to your database.
 
+<p align="center">
+	<img alt="NPM" src="https://img.shields.io/npm/l/dino-db">
+	<img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/dino-db">
+	<img alt="npm" src="https://img.shields.io/npm/v/dino-db">
+	<img alt="npm" src="https://img.shields.io/npm/dm/dino-db">
+</p>
+
 # Install
 ```shell
 # npm
