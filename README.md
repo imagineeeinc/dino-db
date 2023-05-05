@@ -1,6 +1,5 @@
-<head>
-	<link rel="icon" type="image/svg+xml" href="./dino-db.png" />
-</head>
+<link rel="icon" type="image/svg+xml" href="./dino-db.png" />
+
 <p align="center">
 	<img src="./dino-db.png" width="30%">
 </p>
