@@ -4,7 +4,7 @@
   "description": "dino db cross platform client",
   "main": "src/main.js",
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^1.12.0"
   },
   "repository": {
     "type": "git",
